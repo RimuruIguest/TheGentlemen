@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> JM THE GREAT </title>
+  </head>
+  <body>
+    <iframe
+      id="spotifyPlayer"
+      style="border-radius: 12px"
+      src="https://open.spotify.com/embed/track/5B5eTk7DF8KVp1zpQoY1XY?utm_source=generator"
+      width="100%"
+      height="352"
+      frameborder="0"
+      allowfullscreen=""
+      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+      loading="lazy"
+    ></iframe>
+    <button onclick="playNextTrack()">Next Track</button>
+
+    <script>
+      // Function to play the next track
+      function playNextTrack() {
+        // Get the iframe element
+        var iframe = document.getElementById('spotifyPlayer');
+        
+        // Change the src attribute to load a new track
+        iframe.src = 'https://open.spotify.com/embed/track/ANOTHER_TRACK_ID_HERE';
+      }
+    </script>
+  </body>
+</html>
